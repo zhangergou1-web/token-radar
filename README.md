@@ -9,10 +9,10 @@ Token Radar ranks pre-token protocols by implied value, priced from live-token c
 ## Run it
 
 ```sh
-MAKEFUN_OUTPUT_DIR=out node main.ts --input input/snapshot.json
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input ../input/snapshot.json
 ```
 
-Node 22, standard library only, no network. The run writes `out/board.json`, `out/data.js`, `out/dashboard/` (the page), `out/screenshots/` and `out/dossier.json`. It runs twice byte-identically.
+Node 22, standard library only, no network. The snapshot is the sealed one the kit ships (`input/snapshot.json` beside the repository); the run writes `out/board.json`, `out/data.js`, `out/dashboard/` (the page), `out/screenshots/` and `out/dossier.json`. It runs twice byte-identically.
 
 ---
 
